@@ -1,0 +1,51 @@
+.floppa {
+    position: relative;
+    animation: .8s floppa infinite;
+    top: 175px;
+}
+
+body {
+    background-image: url("21.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-clip: content-box;
+}
+
+.playground {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.batot {
+    animation: .8s batot-buh infinite;
+    height: 200px;
+    width: 500px;
+}
+
+@keyframes floppa {
+    0%{
+        
+    }
+
+    50% {
+        top: -200px;
+    
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes batot-buh{
+    0%,100%{
+        height: 100px;
+    }
+
+    50%{
+        height: 200px;
+    }
+}
